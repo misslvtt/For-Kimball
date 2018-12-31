@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<style>
+
+h1 {
+    text-align: centered;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:100px;
+    }
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    }
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color:dimgray
+}
+.text-center { 
+    text-align: center;
+}
+
+    /* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/*for centering images*/
+.img-center {
+     display:block;
+     margin:auto;
+     width:50%;
+ }
+
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 65px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+</style>
+</head>
+<body style="background-color:turquoise";>
+
+
+<img class=img-center src="Leavitt Sign.jpg" alt=leavittsign>
+
+<p>The Leavitt Life
+    <p style="font-size:15px">The simple stories of Kimball, Missy, and Wesley.</p>
+</p>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Friends-Dating')">Friends-Dating</button>
+  <button class="tablinks" onclick="openCity(event, 'Wedding')">Wedding</button>
+  <button class="tablinks" onclick="openCity(event, 'Honeymoon')">Honeymoon</button>
+  <button class="tablinks" onclick="openCity(event, 'Adventures')">Adventures</button>
+  <button class="tablinks" onclick="openCity(event, 'Mishaps')">Mishaps</button>
+  <button class="tablinks" onclick="openCity(event, 'Wesley')">Wesley</button>
+  <button class="tablinks" onclick="openCity(event, 'Food')">Food</button>
+  <button class="tablinks" onclick="openCity(event, 'Quotes')">Quotes</button>
+  <button class="tablinks" onclick="openCity(event, 'Quiz')">Quiz</button>
+  <button class="tablinks" onclick="openCity(event, 'Notes')">Notes</button>
+</div>
+
+
+
+<div id="Home" class="tabcontent">
+    <h3>Dear Kimball, </h3>
+        <p style="text-align: left"> 
+                <br> <br>
+            This website was designed and written with love. I thought it would be fun to make something that will help 
+            us remember all of the amazing times we have shared toegther. Marrying you was one of the best decisions 
+            that I have ever made and has brought me so much joy. Thank you for being an amazing husband and father. I 
+            hope we can continue to add to this as time goes on, (since no website is ever really finsihed, right?) and
+            make more memories and have more fun adventures. 
+            
+            <br> <br>
+            I love you so much Kimball! 
+            <br> <br>
+            with love,
+            <br> <br>
+            your beautiful and talented programmer wife, Missy
+        </p>
+</div>
+
+
+<div id="Friends-Dating" class="tabcontent">
+  <h3>It all started at FHE.</h3>
+  <p>I remember seeing Kimball for the first time. 
+For some reason I thought his name was Griffin and I remembered we played Secret Hitler.
+He came late and left early. I knew he was James' new roommate so we didn't really get to know eachother until James apologized 
+to me in March. That's when I took this picture. Kimball got really close to a lot of people in that ward..."</p>
+
+
+<img class=img-center src="first pic I took of you.JPG" alt="first pic I took" >
+
+
+<p>After pining after him for a few months (with a couple breaks in between), I could no longer contain my feelings. 
+I had to tell him what I was thinking or I was going to go insane. We had stayed up late talking at the ward campout and 
+spent hours talking in fun "op" and "ong" languages. We had "danced" the night away at classic skating. </p>
+
+
+<img class=img-center src="rollerblading night.jpg" alt=rollerblading>
+
+<p>He stood out to me, he was funny, attractive, and radiated goodness. I had to do something! I texted him at 3am and told him I wanted to talk to 
+him about something. I paced back and forth as I waited for him to come over the following morning. He came to the door and I panicked. 
+What do I say? I decided to keep putting it off.. "Can we go outside?" "Uhh, sure.." "Can we go sit in my car?" "Yeah..." "Do you want to go to
+the park?" "Alright?" So we did.. and I continued to talk about random things until I finally got the courage to explain why I wanted to talk. 
+I told him that I thought that he was "pretty cool" and that I wanted to get to know eachother better. Luckily, he agreed and by the end of 
+the next week, we had seen eachother every night. We stayed up for hours just talking. It was so much fun. The first time we held hands it just 
+felt right, and I was so happy. </p>
+<br/>
+
+
+<p>So then dates starting happening..</p>
+
+
+<img class=img-center src='1st Pic dating.jpg'alt=firstpictogether style=width:50%>
+<p>The 4th of July in Gunlock, less than a week after we starting dating. </p>
+
+<img class=img-center src="dating neice and nephews.jpg" alt=swimming style=width:50%>
+<p>Meeting both families.</p>
+
+
+<img class=img-center src="dating murder mystery dinner.jpg" alt=murdermystery style=width:50%>
+<p>Murder Mystery Dinner with friends. </p>
+
+
+<img class=img-center src="byu game dating.JPG" alt=byugame style=width:50%>
+<p>Because we opened up an account with DFCU, we ended up winning box tickets to the BYU game and we invited my parents. It was out first date 
+    with them and I was very nervous. 
+</p>
+
+<img class=img-center src="ice skating goofy.JPG" alt=goofyice style=width:50%>
+<p>We discovered that we both love iceskating.</p>
+
+<img class=img-center src="my couch dating.JPG" alt=mycouchdating style=width:50%>
+<p>We stayed up way too late and always fell asleep on the couch.. I never liked waking him
+    up to send him home. 
+</p>
+
+<img class=img-center src="too many sandwiches dating.jpg" alt=toomanysandwiches style=width:50%>
+<p>We would meet on campus and eat lunch together, sometimes ending up with way too many sandwiches.
+</p>
+
+<img class=img-center src="so much love dating.jpg" alt=somuchlove style=width:50%>
+<p>We even starting using the "L" word.</p>
+
+<img class=img-center src="ice skating normal.JPG" alt=normalice style=width:50%>
+<p>But then.... we broke up. Worst 4 days EVER.;) It was a huge step in our relationship, we were able to work through our issues and then we 
+    became a whole lot closer. That's when things got serious... 
+</p>
+<img class=img-center src='fake engagement.JPG'alt=fakeengagementpic style=width:50%>
+
+<p>WARNING:This is a fake picture. He actually proposed inside the temple.</p>
+
+    <div class="row">  
+        <div class="column">
+          <img src="piggyback engagement.jpg" alt="piggybackMis" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="piggypack engagement2.jpg" alt="piggybackKim" style="width:100%">
+        </div>
+        <div class="column"></div>
+
+ 
+    </div>
+
+    <p>Fun fact: We actually took these engagement pictures before we got engaged. Other fun fact: while we were here, a lady came up 
+    to us and told us her son was in jail for taking pictures on the tracks.. We left shortly after.
+    </p>
+
+    <img class=img-center src="Last Thanksgiving apart.jpg" alt=thanksgivingsnap style=width:50%>
+    <p>Our last holiday apart. 
+    </p>
+
+    <div class="row">  
+            <div class="column">
+              <img src="almost married kim.jpg" alt="almostmarriedkim" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="almost married mis.jpg" alt="almostmarriedmiss" style="width:100%">
+            </div>
+            <div class="column"></div>
+    
+     
+    </div>
+
+    <p>And then we got ready for the big day...</p>
+</div>
+
+<div id="Wedding" class="tabcontent">
+  <h3>It was perfect day.</h3> 
+<img class=img-center src="wedding annoucement.JPG" alt=weddingannouncement style=width:50%>
+<br> <br>
+
+<img class=img-center src="walking out wedding.JPG" alt=walkingout style=width:50%>
+<p>We were so nervous to come out after the sealing. So much excitement and so many emotions.</p>
+
+
+<img class=img-center src="walking out wedding2.JPG" alt=walkingout2 style=width:50%>
+<p>Mostly just happy emotions</p>
+
+<img class=img-center src="wedding kiss.JPG" alt=weddingkiss style=width:50%>
+<p>And lots of kissing...</p>
+
+<img class=img-center src="wedding kiss (2).JPG" alt=weddingkiss2 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss3.jpg" alt=weddingkiss3 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss 4.jpg" alt=weddingkiss4 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss 5.jpg" alt=weddingkiss5 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss 6.jpg" alt=weddingkiss6 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss 7.jpg" alt=weddingkiss2 style=width:50%>
+<p>and kissing...</p>
+
+<img class=img-center src="wedding kiss gross.JPG" alt=weddingkissgross style=width:50%>
+<p>Okay okay, you get the picture.</p>
+
+<img class=img-center src="wedding pic.JPG" alt=weddingpic style=width:50%>
+<p>We looked daaaaang good.</p>
+
+
+<img class=img-center src="wedding family kim.JPG" alt=weddingfamilykim style=width:50%>
+<img class=img-center src="wedding family miss.JPG" alt=weddingfamilymis style=width:50%>
+<p>It was amazing to have the support of our families.</p>
+
+<img class=img-center src="wedding kids.JPG" alt=weddingkids style=width:50%>
+<p>And the adorable kids..</p>
+
+<img class=img-center src="wedding line.JPG"alt=weddingline style=width:50%>
+<p>And even the support of people we didn't really know. Even (or especially) when it was in the form of money.</p>
+
+<img class=img-center src="wedding cake.JPG" alt=weddingcake style=width:50%>
+<p>I asked Kimball to feed me the cake gently, and he did. 
+He was respectful of all of my wishes for the reception, most 
+of which were to avoid drawing too much attention to myself. 
+I didn't want dancing, and even though Kimball loves to dance, 
+he said he was totally fine with it. Even though it was a small thing,
+it meant a lot. </p>
+
+<img class=img-center src="wedding donuts.JPG" alt=weddingdonuts style=width:50%>
+<img class=img-center src="wedding hot chocolate.JPG" alt=weddinghotchocolate style=width:50%>
+<p>Since my parents told us we could keep the money we didn't spend, we decided to go cheaper 
+    on the food. We didn't even eat any at the reception anyway. 
+    But we did end up having extra donuts and bringing them with us 
+    on our honeymoon... 
+</p>
+</div>
+
+
+<div id="Honeymoon" class="tabcontent">
+  <h3>Kissimmee, Florida</h3>
+
+  <img class=img-center src="honeymoon start fam.JPG" alt=honeymoonstartfam  style=width:50%>
+  <p>Interestingly enough, this is the first picture we took on our honeymoon. 
+      Since Christmas was right smack in the middle, we chose to go back to Mountain Green
+      and then to Gunlock so we could see our families on Christmas.
+  </p> 
+
+  <img class=img-center src="honeymoon selfie 1.JPG" alt=honeymoonselfie style=width:50%>
+<p>One thing that we found problematic was that since we were on our honeymoon, we had no one
+    to take pictures of us..</p>
+    <img class=img-center src="honeymoon selfie 2.JPG" alt=selfie2 style=width:50%>
+    <img class=img-center src="honeymoon selfie 3.JPG" alt=selfie3 style=width:50%>
+    <img class=img-center src="honeymoon selfie 4.JPG" alt=selfie4 style=width:50%>
+    <img class=img-center src="honeymoon selfie 5.JPG" alt=selfie5 style=width:50%>
+<p>Luckily, I know how to take a good selfie. :)</p>
+    
+<img class=img-center src="honeymoon hotel.JPG" alt=honeymoonhotel style=width:50%>
+<p>My parents were kind enough to let us stay in their timeshare, which turned out to be amazing! We didn't get out much though,
+    we prefered staying inside, eating chinese take-out, watching Harry Potter and napping. ;) 
+</p>
+
+<img class=img-center src="honeymoon mall art.JPG" alt=honeymoonmall style=width:50%>
+<p>One night we went out to dinner at a mall and they had some pretty creative art there. </p>
+
+<img class=img-center src="honeymoon sea world.JPG" alt=seaworld style=width:50%>
+<p>We even made it to Sea World! Where we ended up riding like 2 rides, getting sick, and falling asleep on some benches for like an hour... 
+    They did have some pretty cool shows though, and we stayed awake for most of them. 
+</p>
+
+<img class=img-center src="honeymoon temple.JPG" alt=honeymoon temple style=width:50%>
+<p>We even got to go the temple. It was a really special thing to do right after we were sealed. Afterward we ate Olive Garden
+    where we met our favorite server ever. He sent us home with a bunch of salad and breadsticks. I guess we are suckers for free food. 
+</p>
+<img class=img-center src="honeymood armadillo.JPG" alt=armadillo style=width:50%>
+<p>We went on a  boardwalk with a couple that we had met at church and saw an armadillo. The couple was so sweet, but we kind of felt kidnapped. They made us 
+    dinner and showed us around Kissimmee. They kept us for about 5 hours, but we were so grateful for their generosity. We will never forget 
+    our honeymoon grandparents. 
+</p>
+
+<img class=img-center src="honeymoon fake dude.JPG" alt=fakedude style=width:50%>
+<p>On our way home we saw this guy... I swear he was real! 
+    We really enjoyed our time together. It was a perfect honeymoon and we were ready and excited to go home and start our new 
+    life together, full of adventures and mishaps...
+</p>
+
+</div>
+
+<div id="Adventures" class="tabcontent">
+    <h3>So many good times.</h3>
+
+    <img class=img-center src="adventure no bed.JPG" alt=nobed style=width:50%>
+<p>We started out our marriage bedless. We still hadn't figured out how we were going to get my bed from Moutain Green to Provo.
+ </p>
+
+<img class=img-center src="first apartment.JPG" alt=firstapt style=width:50%>
+<p> We loved our first apartment, Liberty Center. They had free soda, a small gym, a parking garage, free food, and great management. 
+        It was a great way to start off our marriage.</p>
+
+<img class=img-center src="adventure first home bed.JPG" alt=bed style=width:50%>
+<p>And eventually we got a bed and then look what happened...</p>
+
+
+<div class="row">  
+        <div class="column">
+                <img class=img-center src="pregnant adventure.JPG" alt=pregadventure style=width:100%>
+        </div>
+        <div class="column">
+          <img src="pregant adventure 2.JPG" alt="pregadventure2" style="width:100%">
+        </div>
+        <div class="column"></div>
+
+ 
+</div>
+
+<p>Sometimes being pregnant was a hard and uncomfortable adventure, but I would say the majority of the time, I really enjoyed it. 
+It was really exciting and luckily I only threw up one time. We went out to eat way too much because I didn't want to make anything
+and I always wanted pizza. </p>
+
+<img class=img-center src="pregant adventure pic 1.JPG" alt=preg1 style=width:50%>
+<p>It felt like forever before I started to show. Once I did though, we started comparing bellies.. I think he actually beat me in 
+    some of these...</p>
+
+    <img class=img-center src="pregnant adventure pic 2.JPG" alt=preg2 style=width:50%>
+    <img class=img-center src="pregnant adventure pic 3.JPG" alt=preg3 style=width:50%>
+    <img class=img-center src="pregnant adventure pic 4.JPG" alt=preg4 style=width:50%> 
+    <img class=img-center src="pregnant adventure pic 5.jpg" alt=preg5 style=width:50%>
+
+</br>
+</br>
+
+<img class=img-center src="tennis adventures.jpg" alt=tennisadventure style=width:50%>
+<p>Once I got pregnant, we started playing tennis. Kimball pretty much beat me every time, but it was still really fun. 
+        I hated bending down when I was pregnant though so I usually would kick Kimball all the balls so he could pick them up. </p>
+
+<img class=img-center src="homeless adventure.jpg" alt=homeless style=width:50%>
+<p>One time while I was walking back from campus, I said hi to a homeless man... the snapchat I sent to Kimball tells the rest of 
+    the story.  </p>
+
+
+
+<img class=img-center src="graduation adventure.jpg" alt=graduationadventure style=width:50%>
+<p>Then I graduated! We acutally announced that I was pregnant on the day of graduation because we had a lot of family together. 
+    It was at Chili's and I was wearing a shirt that had a baby on it. 
+</p>
+
+<img class=img-center src="gender reveal adventure.JPG" alt=genderreveal style=width:50%>
+    <p>To announce whether we were having a boy or a girl, I made cupcakes that had fake plastic saftey pins and one of them was either 
+        green for a boy or purple for a girl. Jen found a green saftey pin in her cupcake! We were having baby boy! 
+    </p>
+
+ 
+    <div class="row">  
+            <div class="column">
+                    <img class=img-center src="nauvoo adventure.JPG" alt=nauvoo1 style=width:100%>
+            </div>
+            <div class="column">
+              <img src="nauvoo adventure 2.JPG" alt=nauvoo2 style="width:100%">
+            </div>
+            <div class="column"></div>
+    
+     
+    </div>
+    <p>In some ways I think Nauvoo falls under the mishaps, but it definitely had its highlights. We saw the Nauvoo pageant and several
+        other shows that I enjoyed. I loved to see Kimball in a place that is so special for him.
+    </br>
+    The hard part was sitting for hours while I was 7 months pregnant and dealing with the humidity there as well. I don't think I will
+    go to Nauvoo while I am pregnant, ever again...
+    </p>
+
+    <h3>*Fast forward several months* (Wesley gets his own category so we are going to skip over that adventure for now.)</h3>
+    
+
+    <img class=img-center src="ocean adventure.JPG" alt=ocean adventure style=width:50%>
+    <p>This was one of the biggest adventure of them all. We went to Scandinavia with a 6 month old. We decided a few things after this trip.. <br>
+        1. We like free toilet paper. <br>
+        2. A bunless hotdog with fried onions is delicious. <br>
+        3. We never want to ride a train again. <br>
+        4. On vacations, we will stay in the same hotel for at least a week. 
+        5. Wesley is an angel. 
+        6. We love Germany their ice cream. 
+    </p>
+
+    <img class=img-center src="rodeo adventure.jpg" alt=rodeoadventure style=width:50%>
+    <p>Momma Leavitt was kind enough to watch Wesley for us while we went to the Gunlock Rodeo. The last time we had gone before this 
+        was when we were dating. Kimabll tried to convince me to ride a donkey to go get a watermelon. I almost did. This time Kimball 
+        didn't even attempt to convince me, because he knew me much better at this point. :) 
+    </p>
+
+    <img class=img-center src="longslide adventure.jpg" alt=longslide style=width:50%>
+    <p>We went to Kimball's family reunion in Idaho and they had a giant slide there, we both went down. The night before we came to this cabin
+        we were at a girls' camp and slept in the motor home with Wesley. He got sick and threw up and was up until like 11pm watching Psych with 
+        us because he was too sad to sleep. 
+    </p>
+
+    <img class=img-center src="hiking timp adventure.jpg" alt=hikingtimp style=width:50%>
+    <p>We hiked to the Timp cave with my family. With all the kids and 3 babies it was quite the adventure, but it was enjoyable. Our tour guide talked 
+        too much though. Bless his heart. 
+    </p>
+
+    <img class=img-center src="Haloween adventure.jpg" alt=halloween style=width:50%>
+    <p>We decided (or I guess I decided) that since we have a baby now that we needed to dress up for Halloween. If you can't tell, I am 
+        a safari person, Kimball is wearing a Lion shirt, and Wesley is a lion. He definitely looked the best. (besides Kimball)
+    </p>
+
+
+  </div>
+  
+  <div id="Mishaps" class="tabcontent">
+    <h3>oops..</h3> 
+
+
+    <img class=img-center src="keys mishap.jpg" alt= style=width:50%>
+    <p>Very soon after we got married, I went to take a test and I accidently left the keys in the car. I think you were taking 
+        a test so I wasn't able to get your help. I had to pay someone to come open my car because I had to have a parking pass in my car
+        while I took the test, but I couldn't put it in. Awkward..
+    </p>
+
+
+    <img class=img-center src="Pregnant ER Mishap.JPG" alt=PregnantER style=width:50%>
+    <p>While I was pregnant I started having symptoms of a UTI.. painful urination and having to go ALL the time, which I already did. 
+        I hadn't told anyone I was pregnant yet and I was convinced it was going to harm my baby. I stayed up in the middle of the looking up 
+        things about kidney infections. Me up in the middle of the night is just a bad idea. I convinced myself I had a kidney infection 
+        and woke Kimball up to take me to the ER. (Little did I know how expensive the ER is, I guess I had to learn the hard way) While 
+        I found out that I had a UTI, which easily could have been treated the next day at an instacare. My late night worrying cost me 
+        over $1000.. never again. 
+    </p>
+
+    <div class="row">  
+        <div class="column">
+                <img class=img-center src="Wesley ER mishap.jpg" alt=WesER style=width:100%>
+        </div>
+        <div class="column">
+          <img src="wes ER mishap.jpg" alt=wesER2 style="width:100%">
+        </div>
+        <div class="column"></div>
+    </div>
+    <p>Except it did happen again. This time it was for little Wesley. I threw up for the first time, 3 times we we were worried. We 
+        called the Metabolic clinic twice and they told us to take him. He didn't throw up at all at the hospital. Because he has MCAD, 
+        they had to run a bunch of horrible test on him, including getting a urine sample with a catheter, which for a little 6 month old
+        is miserable. &#x1F494; We stayed over night at the hospital and got a free meal. Luckily Wesley was on medicaid still so we didn't have to 
+        pay a dime. We had a horrible nurse who talked way too much. Bless her heart. 
+    </p>
+
+    <img class=img-center src="Finger mishap.jpg" alt=finegermishap style=width:50%>
+    <p>And then it happened again.. but this time we went in for good reason. Avocados. Totally worth it... NOT. I was making avocado toast
+        (which is delicious by the way) and I was trying to get the pit out with a cutco knife. I still am a little unclear about how the cut
+        ended up on top of my hand. I told Kimball that I had just cut myself really bad and he didn't believe me! Then I showed him and got 
+        faint and bossed him around "Call my dad! Wrap my finger! Not like that!" Then we went to the ER (AGAIN) and a nice doctor stitched 
+        it up. I have a cool scar now and it's still numb on the top of my finger, must have hit a nerve. It cost quite a bit, but I guess 
+        its worth keeping a finger. 
+    </p>
+
+    <img class=img-center src="no AC mishap.jpg" alt=noAC style=width:50%>
+    <p>One very unfortunate part of our time at the Orem house was the lack of AC. After living there for several months it started to get 
+        hot... really hot. We tried to turn on the AC.. but then found out that it didn't exist! They bought swamp cooler that really only
+        cooled the small space around it. So we moved our matress to the much cooler basement along with Wesley's pack n' play for months 
+        until we moved out. They got AC a few weeks later, ha! 
+    </p>
+
+    <img class=img-center src="stroller mishap.jpg" alt=strollermishap style=width:50%>
+    <p>When we went to Scandinavia, we decided to take our stroller so we wouldn't have to carry Wesley around the whole time. Smart right?
+        Apparently not, they broke our stroller and told us to talk to the airline later to report it. We went the whole trip without a 
+        stroller and then when we got back it was too late to report it. We were not reimbursed. Still bitter. 
+     </p>
+
+    <img class=img-center src="chaitr mishap.jpg" alt=chairmishap style=width:50%>
+    <p>When Wesley started to pull himself up he also started to pull things down... including a chair, on top of his face.
+         Poor cute sweet Wesley. </p>
+
+    <img class=img-center src="broken toe mishap.jpg" alt=brokentoe style=width:50%>
+    <p>My toes endure a lot. Wesley and Kimball like to drop things on them and I like to hit them on stuff. This time I hit my little toe on a 
+        table and probably broke it. Kimball worked from home for a few days while I dealt with the pain.
+    </p>
+
+    <img class=img-center src="fainting mishap.jpg" alt=faintingmishap style=width:50%>
+    <p>After Wesley and I had endured so many of our own mishaps, Kimball finally had one of his own. The night before the incident, 
+        he had eat 2 huge bags of sugary chewy candy at my parents house. He woke up to go to the bathroom and well then he was on the floor. I heard a loud noise and 
+        Wesley had woken up crying. Kimball layed limp on the floor of the bathroom. My heart dropped and I tried to squeeze my way in to talk to 
+        him. He was very dizzy and super out of it. I woke up my dad and he offered to get some medicine to help the dizziness. Kimball took it 
+        and it took him about a half hour to make his way back in our bed. Still not super sure why he fainted, but he sure left his mark in my parents 
+        wall. 
+    </p>
+
+  </div>
+
+  
+  <div id="Wesley" class="tabcontent">
+    <h3>And then our lives changed forever...</h3>
+
+  
+    <img class= img-center src="Pregnant adventure almost here.jpg" alt=wesiscomin style=width:50%>
+    <p>When Wesley starting making his way into the world through labor, all I wanted was Panda Express. I didn't quite know if I 
+        was in labor or not, but I knew they wouldn't let me eat later if I was. I ate the whole box, which I never do. After Kimball
+    got home, my back started hurting. It was back pain in waves and I thought, "This can't be labor!" It was. We went to the hospital 
+when my "back labor" progressed and sped up. They admitted us and we waited for me to recieve an epidural. The doctor kept getting mad 
+at me because I couldnt keep my back straight. I AM IN LABOR GOSH DANG IT. YOU KEEP YOUR BACK STRAIGHT. (I wanted to say) Finally he got 
+it in but I could still feel pain, so I asked for a higher dose. Eventually they gave in and then I couldn't feel a thing. Wesley
+was ready to come! When I was dialted to a 10 about 4 hours later I started to push. I pushed for 2 hours and he was out. Kimball said 
+he looked like a little alien. Wes was 7lbs 5oz. 
+</p>
+          
+
+    <img class=img-center src="Wesley Hello World.jpg" alt=weshi style=width:50%>
+    <p>He was so perfect and precious. A few days later, I got a phone call. (well, several phone calls because I missed them.) A woman
+        told me in panic that Wesley had MCAD deficiency and that if he didn't eat for 2 hours, he could die. I was in shock. It was 
+        so hard to think that my perfect little baby wasn't so perfect. As we came to understand the deficiency, we learned that 
+        it was totally managable. The time that he can go without eating increases and he gets bigger and will eventually be 12-14 hours
+        at most. Wesley Judd Leavitt is our perfect little MCAD baby, named after our common MCADD ansestor William Riley Judd. 
+        Fun fact that Kimball doesn't like me sharing but that I love to share, Wesley and Kimball are fourth cousins! 
+    </p>
+    <br>
+    <p>Unfortunately, we realized very quickly that our sleep would never be the same again...</p>
+
+    <div class="row">  
+        <div class="column">
+                <img class=img-center src="mom and wes sleep.jpg" alt=momandwessleep style=width:100%>
+        </div>
+        <div class="column">
+          <img src="dad and wes sleep.jpg" alt=dadandwessleep style="width:100%">
+        </div>
+        <div class="column"></div>
+    </div>
+
+    <p>But it was all worth it. And Wesley got loads of sleep.</p>
+
+    <div class="row">  
+
+        <div class="column">
+            <img src="Wes sleep newborn cute.jpg" alt=nbsleep style="width:100%">
+            </div>
+
+        <div class="column">
+          <img src="wes cute sleep 2.jpg" alt=nbsleep2 style="width:100%">
+        </div>
+
+        <div class="column">
+                <img class=img-center src="sleep wes sleep.jpg" alt=sleepwes style=width:100%>
+        </div>
+        <div class="column">
+          <img src="sleep wes sleep2.jpg" alt=sleepwes2 style="width:100%">
+        </div>
+
+        <div class="column">
+                <img src="sleep wes sleep 3.jpg" alt=sleepwes3 style="width:100%">
+              </div>
+        <div class="column">
+                    <img src="wes cute sleep.jpg" alt=cutesleep style="width:100%">
+            </div>
+        
+    </div>
+
+
+    <p>Lucky for Kimball, he can sleep through anything, so Wes and him had lots of quality nap time.</p>
+    <img class=img-center src="wes and dad sleep.jpg" alt=sleep1 style=width:50%>
+    <img class=img-center src="wes and dad sleep 2.jpg" alt=sleep2 style=width:50%>
+    <img class=img-center src="sleepy2.jpg" alt=wesdad style=width:50%>
+
+    <p>Fun fact about Wesley, he LOVES hats.</p>
+  
+    <div class="row">  
+
+            <div class="column">
+                <img class=img-center src="Wes hat 3.jpg" alt=weshat3 style="width:100%">
+                </div>
+            <div class="column">
+              <img src="wes hat 2.jpg" alt=weshat2 style="width:100%">
+            </div>
+            <div class="column">
+                    <img  src="wes hat 1.jpg" alt=weshat1 style=width:100%>
+            </div>
+            <div class="column">
+              <img src="wes hat 4.jpg" alt=weshat4 style="width:100%">
+            </div>
+            
+        </div>
+
+<p>He looks darn cute in them too. &#x1F60D; </p>
+
+<img class=img-center src="wesley in stroller with hat.jpg" alt=wesleyhatstroller style=width:50%>
+
+<p>You know, I am not sure if we bring out the weird in Wesley, or he brings out the weird in us. I think in this case, Wesley came first.</p>
+
+<img class=img-center src="Wes spaghetti.jpg" alt=wesspag style=width:50%>
+
+<img class=img-center src="wes and leaves.jpg" alt=wesleaves style=width:50%>
+
+
+
+<p>Even though Wesley doesn't techincally carry the "Leavitt" blood, It seems like he actually have somehow inherited it.</p>
+
+<img class=img-center src="wes and horse.jpg" alt=weshorse style=width:50%>
+
+<img class=img-center src="wes and bull.jpg" alt=wesbull style=width:50%>
+
+<p>Wesley loves people. He is constantly looking for attention and stares at strangers, hoping they will look at him. 
+    He often reaches out to strangers to hold him and smiles at anyone and everyone. He makes everyone feel like they
+    are special. (Or maybe he makes everyone realize they are.) He's our little ray of sunshine. And he's got two hooligans to 
+    play with. 
+</p>
+
+<img class=img-center src="wes and twins.jpg" alt= style=width:50%>
+
+
+
+  </div>
+
+  <div id="Food" class="tabcontent">
+    <h3>Yes, food deserves its own category.</h3>
+    <img class=img-center src="shepards pie food.JPG" alt=shepardspie style= width:50%>
+<p>When we first got married, we used out instant pot a ton. We often made Shepard's pie, it was delicious. We started gain a lot of 
+    weight because when we made a meal, we would eat like 3 servings.. 
+</p>
+
+    <img class=img-center src="meal food.jpg" alt=mealfood style=width:50%>
+<p>While this meal looks like it was pretty good, we tried this recipe with flour tortillas and it was nasty.</p>
+
+<img class=img-center src="conference waffles food.jpg" alt=conferencewaffles style=width:50%>
+<p>Since we have been married, food has been a bit part of our celebrations. Waffles, ice cream, and peach syrup is a 
+    tradition that Kimball's family does on conference morning. 
+</p>
+
+<img class=img-center src="smash burger food.jpg" alt=smashfood style=width:50%>
+<p>We had a few of these coupons to Smash Burger and now we are hooked. We have decided to make it a tradition to go there whenever 
+    Kimball finishes a semester. It is probably the best cheeseburger I have ever had. 
+</p>
+
+</br>
+<p>We decided to do a "healthy habits" program. We did it twice, for a total of 16 weeks of eating fairly healthy. So we found some 
+    healthier foods that we really liked..
+</p>
+
+<img class=img-center src="spaghetti squash food.jpg" alt=spaghettisquash style=width:50%>
+<p>This is spaghetti squash alfredo "pasta." It was so good. </p>
+<img class=img-center src="zuchini enchiladas.jpg" alt=zucchinienchiladas style=width:50%>
+<p>These are zucchini enchiladas. They were also amazing.</p>
+<img class=img-center src="healthy banana muffin.jpg" alt=bananamuffin style=width:50%>
+<p>I found a few times of muffins that I really enjoyed making. They had no refined sugar.. but they had a whole lot of 
+    pure maple syrup, which probably isn't much better. (But we were allowed to eat it during our healthy habits time)
+</p>
+<img class=img-center src="pumkin zuchini bread food.jpg" alt=pumpkin style=width:50%>
+<p>This is chocolate chip pumpkin zuchini bread. It was amazing! (also made with maple syrup)</p>
+<img class=img-center src="overnight oats food.jpg" alt=overnightoats style=width:50%>
+<p>When we found overnight oats we were really excited. We starting making them every night so we would have our breakfast made in 
+    the morning.. we thought we were being so healthy.. then I did a calorie count.. it was like 700 calories. Woah. So we don't make 
+    them as much anymore. 
+</p>
+
+<img class=img-center src="food eggs.jpg" alt=eggs style=width:50%>
+<p>Eggs are our staple food. Whenever we can't think of what to eat, or don't have "anything" to eat, we resort to eggs. Kimball makes 
+    the best eggs. 
+</p>
+
+<img class=img-center src="reeses food.jpg" alt=reeses style=width:50%>
+<p>Kimball likes to find reese's that don't leave a trail of chocolate when you take it out of the wrapper. He took this picture to
+    vent about his strong feelings. 
+</p>
+
+<div class="row">  
+
+        <div class="column">
+            <img class=img-center src="eyeball cookies food.jpg" alt=eyeballcookes style="width:100%">
+            </div>
+        <div class="column">
+          <img src="wesbday food.jpg" alt=happybdayfood style="width:100%">
+        </div>
+        
+    </div>
+<p>I have been watching a lot of the Great British Baking show and it has really made me want to bake!! Both of these creations took me a few hours. 
+    I made the eyeball cookies for a ward baking compeition. I won the award for the best themed dessert. ($10 to Chick-fil-A!! Woo!)
+    I obviously made the cake for Wesley's first birthday. It was really fun to make! 
+</p>
+
+ <img class=img-center src="breakfast in Norway food.jpg" alt=norwayfood style="width:50%">
+<p>Some of the best food that we have had toegether was the food we had in Norway. This was a typical breakfast there. It was 
+    Kimball's favorite. 
+</p>
+
+<img class=img-center src="orange chicken food.jpg" alt=orangechicken style="width:50%">
+<p>I made this for Kimball on his birthday. Its orange chicken and rice. We both agreed we liked it more than Panda Express, which 
+    is really saying something. (For Kimball at least.)
+</p>
+
+<img class=img-center src="Kimball's creations food.jpg" alt=Kimballcreation style="width:50%">
+<p>One thing that Kimball likes to do is put together leftovers to make something new. Honestly, most of the time his creations are nasty.
+    I should have documented more of them, but he is one that really made me gag...
+</p>
+      <p>If you can't tell, food is a big part of our lives.. (that's not a fat joke).</p>
+
+  </div>
+  
+  <div id="Quotes" class="tabcontent">
+    <h3>Documented Facts</h3>
+
+    <p>While Dating:</p>
+
+    <p>Missy</br>
+        
+        "Your leg is my teddy bear."</p>
+    </br>
+    <p>"I like the idea of nietos."</p>
+</br>
+<p>"I'm just inherently seductive."</p>
+</br>
+<p>"Can we be on the same team? Which is team chastity?"</p>
+</br>
+<p>You can warm up my feet with your hot body."</p>
+</br> 
+<p>"If we ever get divorced, let date again."</p>
+</br>
+<p>"It's not like when we are married we will be like, "Let's go to bed at 9 so that we dont have sex!."</p>
+</br>
+<p>"Eternity is exciting because I know I get to spend it with you."</p>
+
+<p>Kimball </br> 
+    "I dreamed I was in heaven and I woke up and I was." </p>
+</br>
+<p>"Count you many blessings name them one by one.... missy missy missy missy missy."</p>
+</br>
+<p>"I don't want to be just friends but I just want to be friends."</p>
+</br>
+<p>"You're so cute it hurts."</p>
+</br>
+<p>"Man when we go to Nauvoo and your hair is in braids and you're in a pioneer dress.... I just think you'd be an 
+    attractive pioneer."
+</p>
+</br>
+<p>"Even if you use the wrong "your" or the wrong "its" or the wrong compliment, or the wrong there, I will still be attracted to you."</p>
+</br>
+<p>"Even though breaking up was really hard, those were some of the most beautiful hours I have ever experienced."</p>
+</br>
+<p>"I saw that sweater and though, I don't even need to pray anymore."</p>
+</br>
+<p>"Whatever your foreordained to do, I'm coming with.</p>
+</br>
+<p>"If you got any more beauty sleep, I'd probably fall over every time I see you."</p>
+</br>
+<p>"Heavenly Father did a really good job on you."</p>
+
+
+   <p>After Marriage: (We really need to add more to this list.)</p>
+
+    <p>Missy </br>
+        
+        (saying out nighttime prayers together) "Por favor ayudanos a saber el debido tiempo que concinamos."</p>
+</br>
+    <p>Kimball </br>
+         *Kimball hurts his finger* "Ouch! You have to kiss me 100 times."</p>
+</br>
+<p>"I wish I could feel your uterus pains with you."</p>
+</br>
+<p>"I could seduce you with poptarts anytime!"</p>
+
+
+
+  </div>
+  
+  <div id="Quiz" class="tabcontent">
+
+    <h1>Are you more like Missy, Kimball, or Wesley?</h1>
+    <h2>Take this test to find out! Keep track of your score as you answer.</h2>
+    <p>1. What do you do with your free time? <br/>
+    A.I look at my budget <br/>
+    B. I break into websites<br/>
+    C. I eat leaves<br/>
+    </p>
+<p>2. What is your favorite food?</br>
+A. Desserts </br>
+B. Raspberries </br>
+C. All of the above </br>
+</p>
+
+<p>3. What is your favorite music?</br>
+    A. I dont know, I am picky.</br>
+    B. I don't know, I like everything.</br>
+    C. Da da da da da da</br>
+    </p>
+
+ <p>4. What time do you go to bed?</br>
+    A. 9pm</br>
+    B. 9pm-3am</br>
+    C. 7:30pm</br>
+        </p>
+
+ <p>5. What your favorite flavor of icecream?</br>
+    A. Anything with peanut butter and chocolate</br>
+    B. Fruity or "Honey grams n'milk</br>
+    C. All of the above</br>
+    </p>
+
+<p>6. Describe yourself using one word.</br>
+        A. Amazingcutekindtalentedwife</br>
+        B. Sexy</br>
+        C. More</br>
+        </p>
+
+       <p>Now add up your scores! 
+       </br>A= Missy B=Kimball C=Wesley
+       </p>
+
+  </div>
+
+  <div id="Notes" class="tabcontent">
+  
+    <div class="container" >
+        <img src="dance.gif.gif" alt="dance"style=width:23%>
+        <div class="centered"> Happy <br/> Anniversary <br/> Kimball 
+        
+        </div>
+    
+    </div>
+      </div>
+
+<script>
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+
+
+</body>
+</html>
+
