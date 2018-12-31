@@ -864,44 +864,76 @@ he looked like a little alien. Wes was 7lbs 5oz.
 
     <h1>Are you more like Missy, Kimball, or Wesley?</h1>
     <h2>Take this test to find out! Keep track of your score as you answer.</h2>
-    <p>1. What do you do with your free time? <br/>
-    A.I look at my budget <br/>
-    B. I break into websites<br/>
-    C. I eat leaves<br/>
-    </p>
-<p>2. What is your favorite food?</br>
-A. Desserts </br>
-B. Raspberries </br>
-C. All of the above </br>
-</p>
 
-<p>3. What is your favorite music?</br>
-    A. I dont know, I am picky.</br>
-    B. I don't know, I like everything.</br>
-    C. Da da da da da da</br>
-    </p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('quiz-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                let checkedChoice = document.querySelector("[name=free-time]:checked");
 
- <p>4. What time do you go to bed?</br>
-    A. 9pm</br>
-    B. 9pm-3am</br>
-    C. 7:30pm</br>
+                // make sure they checked something
+                if (checkedChoice === null) {
+                    alert('Please select an answer');
+                }
+
+                // if they did check something, get the value and store it
+                else {
+                    let choiceValue = checkedChoice.value;
+                    console.log("You selected: " + choiceValue);
+                }
+            });
+        })
+    </script>
+
+    <form action="" id="quiz-form">
+        <p>1. What do you do with your free time? <br>
+            <input type="radio" name="free-time" id="free-time-1" value="a">
+            <label for="free-time">A. I look at my budget</label>
+            <br>
+            <input type="radio" name="free-time" id="free-time-2" value="b">
+            <label for="free-time">B. I break into websites</label>
+            <br>
+            <input type="radio" name="free-time" id="free-time-3" value="c">
+            <label for="free-time">C. I eat leaves</label>
+            <br>
         </p>
 
- <p>5. What your favorite flavor of icecream?</br>
-    A. Anything with peanut butter and chocolate</br>
-    B. Fruity or "Honey grams n'milk</br>
-    C. All of the above</br>
+        <input type="submit">
+    </form>
+
+    <p>2. What is your favorite food?<br>
+    A. Desserts <br>
+    B. Raspberries <br>
+    C. All of the above <br>
     </p>
 
-<p>6. Describe yourself using one word.</br>
-        A. Amazingcutekindtalentedwife</br>
-        B. Sexy</br>
-        C. More</br>
-        </p>
+    <p>3. What is your favorite music?<br>
+    A. I dont know, I am picky.<br>
+    B. I don't know, I like everything.<br>
+    C. Da da da da da da<br>
+    </p>
 
-       <p>Now add up your scores! 
-       </br>A= Missy B=Kimball C=Wesley
-       </p>
+    <p>4. What time do you go to bed?<br>
+    A. 9pm<br>
+    B. 9pm-3am<br>
+    C. 7:30pm<br>
+    </p>
+
+    <p>5. What your favorite flavor of icecream?<br>
+    A. Anything with peanut butter and chocolate<br>
+    B. Fruity or "Honey grams n'milk<br>
+    C. All of the above<br>
+    </p>
+
+    <p>6. Describe yourself using one word.<br>
+    A. Amazingcutekindtalentedwife<br>
+    B. Sexy<br>
+    C. More<br>
+    </p>
+
+    <p>Now add up your scores! 
+    <br>A= Missy B=Kimball C=Wesley
+    </p>
 
   </div>
 
